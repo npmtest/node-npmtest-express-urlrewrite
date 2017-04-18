@@ -1,1 +1,40 @@
-{     "devDependencies": {         "express-urlrewrite": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-express-urlrewrite",     "homepage": "https://github.com/npmtest/node-npmtest-express-urlrewrite",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-express-urlrewrite.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [express-urlrewrite (v1.2.0)](https://github.com/kapouer/express-urlrewrite#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-express-urlrewrite.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-urlrewrite) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-urlrewrite.svg)](https://travis-ci.org/npmtest/node-npmtest-express-urlrewrite)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "express-urlrewrite": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-express-urlrewrite",
+    "keywords": [
+        "coverage",
+        "test",
+        "express-urlrewrite"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_express_urlrewrite.js",
+    "name": "npmtest-express-urlrewrite",
+    "nameAlias": "npmtest_express_urlrewrite",
+    "nameOriginal": "npmtest-express-urlrewrite",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-express-urlrewrite.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
