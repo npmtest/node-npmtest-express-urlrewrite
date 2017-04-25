@@ -1,6 +1,6 @@
 # npmtest-express-urlrewrite
 
-#### test coverage for  [express-urlrewrite (v1.2.0)](https://github.com/kapouer/express-urlrewrite#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-express-urlrewrite.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-urlrewrite) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-urlrewrite.svg)](https://travis-ci.org/npmtest/node-npmtest-express-urlrewrite)
+#### basic test coverage for  [express-urlrewrite (v1.2.0)](https://github.com/kapouer/express-urlrewrite#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-express-urlrewrite.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-urlrewrite) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-urlrewrite.svg)](https://travis-ci.org/npmtest/node-npmtest-express-urlrewrite)
 
 #### URL rewrite middleware for express
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-express-urlrewrite/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-express-urlrewrite/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-express-urlrewrite/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-express-urlrewrite/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-urlrewrite/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-urlrewrite/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-express-urlrewrite/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-express-urlrewrite/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-urlrewrite/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-urlrewrite/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-express-urlrewrite/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-express-urlrewrite/build/coverage.html/index.html)
 
@@ -74,7 +74,8 @@
         "url": "git://github.com/kapouer/express-urlrewrite.git"
     },
     "scripts": {},
-    "version": "1.2.0"
+    "version": "1.2.0",
+    "bin": {}
 }
 ```
 
